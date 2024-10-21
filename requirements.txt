@@ -3,3 +3,4 @@ pillow
 trimesh
 plotly
 numpy
+ipympl
