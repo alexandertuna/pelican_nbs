@@ -3,4 +3,5 @@ pillow
 trimesh
 plotly
 numpy
+pandas
 ipympl
