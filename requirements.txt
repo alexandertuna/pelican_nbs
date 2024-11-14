@@ -1,3 +1,4 @@
+notebook
 pelicanfs
 pillow
 trimesh
