@@ -6,3 +6,5 @@ plotly
 numpy
 pandas
 ipympl
+xarray
+cartopy
