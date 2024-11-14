@@ -9,3 +9,4 @@ ipympl
 xarray
 cartopy
 metpy
+zarr
