@@ -105,3 +105,14 @@ wget -O - "https://dl.pelicanplatform.org/latest/pelican_$(uname -s)_$(uname -m)
 
 Make sure `~/.local/bin` is in the `$PATH` environment variable.
 
+## Troubleshooting
+
+If you receive an authorization error while running the `pelican` command line executable, this can sometimes be caused by stale credentials. Two troubleshooting actions are:
+
+```bash
+# First: remove the local pelican cache
+rm -rf ~/.config/pelican/
+# Then rerun the pelican command
+# Second: open the browser link in a private/incognito browser to avoid stale cookies
+```
+
