@@ -2,6 +2,16 @@
 
 This is a short guide to getting, putting, and syncing data with the `pelican` command line executable. `/ndp/public` is a Pelican namespace served through the OSDF federation, and `/access_testing` is a subdirectory. Reads can be done by any user, and writes require you to authenticate with your CILogon identity.
 
+## Installation
+
+The `pelican` command line exectuable is already installed in the National Data Platform JupyterHub environment. But if you need to install the executable separately, this can be done like:
+
+```bash
+wget -O - "https://dl.pelicanplatform.org/latest/pelican_$(uname -s)_$(uname -m).tar.gz" | tar zx -C ~/.local/bin/ --strip-components=1
+```
+
+Make sure `~/.local/bin` is in the `$PATH` environment variable.
+
 ## When you start
 
 Confirm the `pelican` command line executable works:
@@ -94,16 +104,6 @@ Where every `<...-url>` is of the form `osdf:///ndp/public/access_testing/<path>
 - [`pelican object get`](https://docs.pelicanplatform.org/commands-reference/pelican/object/get)
 - [`pelican object put`](https://docs.pelicanplatform.org/commands-reference/pelican/object/put)
 - [`pelican object sync`](https://docs.pelicanplatform.org/commands-reference/pelican/object/sync)
-
-## Installation
-
-The `pelican` command line exectuable is already installed in the National Data Platform JupyterHub environment. But if you need to install the executable separately, this can be done like:
-
-```bash
-wget -O - "https://dl.pelicanplatform.org/latest/pelican_$(uname -s)_$(uname -m).tar.gz" | tar zx -C ~/.local/bin/ --strip-components=1
-```
-
-Make sure `~/.local/bin` is in the `$PATH` environment variable.
 
 ## Troubleshooting
 
